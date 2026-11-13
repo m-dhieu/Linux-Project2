@@ -1,0 +1,353 @@
+662   17:04:46.760430 execve("./pipeline", ["./pipeline"], 0x7ffda832e220 /* 28 vars */) = 0
+662   17:04:46.770055 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+662   17:04:46.771569 close(3)          = 0
+662   17:04:46.772161 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+662   17:04:46.772720 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+662   17:04:46.778135 close(3)          = 0
+662   17:04:46.781041 pipe([3, 4])      = 0
+662   17:04:46.783481 pipe([5, 6])      = 0
+662   17:04:46.783958 pipe([7, 8])      = 0
+662   17:04:46.784909 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f93539e6810) = 663
+662   17:04:46.790685 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+663   17:04:46.790780 dup2(4, 1)        = 1
+663   17:04:46.791158 close(3)          = 0
+663   17:04:46.791542 close(4)          = 0
+663   17:04:46.791926 close(5)          = 0
+663   17:04:46.792316 close(6)          = 0
+663   17:04:46.792693 close(7)          = 0
+663   17:04:46.793135 close(8)          = 0
+662   17:04:46.793615 <... clone resumed>, child_tidptr=0x7f93539e6810) = 664
+663   17:04:46.793694 execve("/home/monicadhieu/.local/bin/cat", ["cat", "/etc/passwd"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+664   17:04:46.793790 dup2(3, 0)        = 0
+662   17:04:46.794132 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+664   17:04:46.794238 dup2(6, 1)        = 1
+664   17:04:46.794847 close(3)          = 0
+664   17:04:46.795247 close(4)          = 0
+664   17:04:46.795678 close(5)          = 0
+664   17:04:46.796170 close(6 <unfinished ...>
+663   17:04:46.796316 <... execve resumed>) = -1 ENOENT (No such file or directory)
+664   17:04:46.797009 <... close resumed>) = 0
+663   17:04:46.797091 execve("/usr/local/sbin/cat", ["cat", "/etc/passwd"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+664   17:04:46.797403 close(7 <unfinished ...>
+662   17:04:46.797487 <... clone resumed>, child_tidptr=0x7f93539e6810) = 665
+664   17:04:46.797568 <... close resumed>) = 0
+665   17:04:46.797759 dup2(5, 0 <unfinished ...>
+664   17:04:46.797846 close(8 <unfinished ...>
+662   17:04:46.797927 close(3 <unfinished ...>
+665   17:04:46.798004 <... dup2 resumed>) = 0
+662   17:04:46.798085 <... close resumed>) = 0
+664   17:04:46.798162 <... close resumed>) = 0
+662   17:04:46.798243 close(4 <unfinished ...>
+665   17:04:46.798319 dup2(8, 1 <unfinished ...>
+662   17:04:46.798398 <... close resumed>) = 0
+665   17:04:46.798479 <... dup2 resumed>) = 1
+664   17:04:46.798560 execve("/home/monicadhieu/.local/bin/cut", ["cut", "-d:", "-f7"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+662   17:04:46.798671 close(5 <unfinished ...>
+665   17:04:46.798752 close(3 <unfinished ...>
+663   17:04:46.798834 <... execve resumed>) = -1 ENOENT (No such file or directory)
+662   17:04:46.798924 <... close resumed>) = 0
+665   17:04:46.799006 <... close resumed>) = 0
+662   17:04:46.799090 close(6 <unfinished ...>
+663   17:04:46.799175 execve("/usr/local/bin/cat", ["cat", "/etc/passwd"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+662   17:04:46.799285 <... close resumed>) = 0
+665   17:04:46.799368 close(4 <unfinished ...>
+662   17:04:46.799499 close(8 <unfinished ...>
+665   17:04:46.799582 <... close resumed>) = 0
+662   17:04:46.799667 <... close resumed>) = 0
+665   17:04:46.799753 close(5 <unfinished ...>
+662   17:04:46.799838 openat(AT_FDCWD, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+665   17:04:46.800013 <... close resumed>) = 0
+665   17:04:46.800240 close(6)          = 0
+664   17:04:46.800676 <... execve resumed>) = -1 ENOENT (No such file or directory)
+663   17:04:46.800763 <... execve resumed>) = -1 ENOENT (No such file or directory)
+665   17:04:46.800838 close(7 <unfinished ...>
+664   17:04:46.800908 execve("/usr/local/sbin/cut", ["cut", "-d:", "-f7"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+663   17:04:46.800995 execve("/usr/sbin/cat", ["cat", "/etc/passwd"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+665   17:04:46.801309 <... close resumed>) = 0
+665   17:04:46.801539 close(8 <unfinished ...>
+662   17:04:46.801762 <... openat resumed>) = 3
+665   17:04:46.801837 <... close resumed>) = 0
+662   17:04:46.802141 read(7,  <unfinished ...>
+665   17:04:46.802245 execve("/home/monicadhieu/.local/bin/sort", ["sort", "-u"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+664   17:04:46.802790 <... execve resumed>) = -1 ENOENT (No such file or directory)
+663   17:04:46.802888 <... execve resumed>) = -1 ENOENT (No such file or directory)
+664   17:04:46.802963 execve("/usr/local/bin/cut", ["cut", "-d:", "-f7"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+663   17:04:46.803054 execve("/usr/bin/cat", ["cat", "/etc/passwd"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+665   17:04:46.803244 <... execve resumed>) = -1 ENOENT (No such file or directory)
+665   17:04:46.803492 execve("/usr/local/sbin/sort", ["sort", "-u"], 0x7fff6ad00d18 /* 28 vars */) = -1 ENOENT (No such file or directory)
+664   17:04:46.804294 <... execve resumed>) = -1 ENOENT (No such file or directory)
+665   17:04:46.804399 execve("/usr/local/bin/sort", ["sort", "-u"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+664   17:04:46.804493 execve("/usr/sbin/cut", ["cut", "-d:", "-f7"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+665   17:04:46.805021 <... execve resumed>) = -1 ENOENT (No such file or directory)
+665   17:04:46.805273 execve("/usr/sbin/sort", ["sort", "-u"], 0x7fff6ad00d18 /* 28 vars */) = -1 ENOENT (No such file or directory)
+665   17:04:46.806068 execve("/usr/bin/sort", ["sort", "-u"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+664   17:04:46.806176 <... execve resumed>) = -1 ENOENT (No such file or directory)
+664   17:04:46.806415 execve("/usr/bin/cut", ["cut", "-d:", "-f7"], 0x7fff6ad00d18 /* 28 vars */ <unfinished ...>
+663   17:04:46.806762 <... execve resumed>) = 0
+665   17:04:46.808034 <... execve resumed>) = 0
+663   17:04:46.808295 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.809467 close(3 <unfinished ...>
+665   17:04:46.809575 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.809671 <... close resumed>) = 0
+665   17:04:46.809757 <... openat resumed>) = 3
+663   17:04:46.809842 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.810643 read(3,  <unfinished ...>
+665   17:04:46.810732 close(3 <unfinished ...>
+663   17:04:46.810804 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+665   17:04:46.810899 <... close resumed>) = 0
+665   17:04:46.811091 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.811370 read(3,  <unfinished ...>
+664   17:04:46.811436 <... execve resumed>) = 0
+665   17:04:46.811506 <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832
+664   17:04:46.813038 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.814068 close(3)          = 0
+665   17:04:46.814454 close(3 <unfinished ...>
+664   17:04:46.814531 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.814742 <... close resumed>) = 0
+664   17:04:46.814817 <... openat resumed>) = 3
+665   17:04:46.815054 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.815165 read(3,  <unfinished ...>
+665   17:04:46.815280 <... openat resumed>) = 3
+664   17:04:46.815348 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+665   17:04:46.815428 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+663   17:04:46.816149 close(3)          = 0
+665   17:04:46.818737 close(3)          = 0
+664   17:04:46.819786 close(3 <unfinished ...>
+663   17:04:46.819877 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.819965 <... close resumed>) = 0
+663   17:04:46.820064 <... openat resumed>) = 3
+663   17:04:46.820841 close(3)          = 0
+663   17:04:46.821201 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.822167 read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+663   17:04:46.822716 read(3, "", 4096) = 0
+663   17:04:46.823093 close(3)          = 0
+663   17:04:46.823597 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.824481 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.824790 close(3)          = 0
+663   17:04:46.825012 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY <unfinished ...>
+665   17:04:46.825095 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.825273 <... openat resumed>) = 3
+664   17:04:46.825687 close(3 <unfinished ...>
+665   17:04:46.825827 close(3 <unfinished ...>
+664   17:04:46.825916 <... close resumed>) = 0
+664   17:04:46.826047 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.826152 <... close resumed>) = 0
+663   17:04:46.826243 close(3 <unfinished ...>
+665   17:04:46.826329 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.826404 <... openat resumed>) = 3
+663   17:04:46.826473 <... close resumed>) = 0
+665   17:04:46.826542 <... openat resumed>) = 3
+663   17:04:46.826703 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.827052 read(3,  <unfinished ...>
+664   17:04:46.827139 read(3,  <unfinished ...>
+665   17:04:46.827246 <... read resumed>"# Locale name alias data base.\n#"..., 4096) = 2996
+664   17:04:46.827321 <... read resumed>"# Locale name alias data base.\n#"..., 4096) = 2996
+665   17:04:46.827574 read(3,  <unfinished ...>
+664   17:04:46.827705 read(3,  <unfinished ...>
+665   17:04:46.827777 <... read resumed>"", 4096) = 0
+665   17:04:46.827891 close(3 <unfinished ...>
+664   17:04:46.827959 <... read resumed>"", 4096) = 0
+665   17:04:46.828029 <... close resumed>) = 0
+663   17:04:46.828095 close(3 <unfinished ...>
+664   17:04:46.828163 close(3 <unfinished ...>
+665   17:04:46.828231 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.828309 <... close resumed>) = 0
+664   17:04:46.828377 <... close resumed>) = 0
+665   17:04:46.828446 <... openat resumed>) = 3
+664   17:04:46.828515 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.828590 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.828710 <... openat resumed>) = 3
+663   17:04:46.828819 <... openat resumed>) = 3
+665   17:04:46.829047 close(3)          = 0
+665   17:04:46.829455 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+664   17:04:46.829781 close(3)          = 0
+663   17:04:46.830024 close(3 <unfinished ...>
+664   17:04:46.830148 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY <unfinished ...>
+663   17:04:46.830263 <... close resumed>) = 0
+665   17:04:46.830337 close(3 <unfinished ...>
+664   17:04:46.830407 <... openat resumed>) = 3
+665   17:04:46.830476 <... close resumed>) = 0
+663   17:04:46.830541 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.830911 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.831233 close(3)          = 0
+663   17:04:46.831506 close(3 <unfinished ...>
+665   17:04:46.831582 close(3 <unfinished ...>
+664   17:04:46.831648 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.831725 <... close resumed>) = 0
+663   17:04:46.831790 <... close resumed>) = 0
+665   17:04:46.831857 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.831930 <... openat resumed>) = 3
+665   17:04:46.832109 <... openat resumed>) = 3
+663   17:04:46.832206 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.832688 close(3)          = 0
+664   17:04:46.832845 close(3 <unfinished ...>
+665   17:04:46.832912 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.833075 <... close resumed>) = 0
+664   17:04:46.833374 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.833502 close(3 <unfinished ...>
+664   17:04:46.833617 <... openat resumed>) = 3
+663   17:04:46.833728 <... close resumed>) = 0
+665   17:04:46.833799 close(3)          = 0
+663   17:04:46.833959 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.834038 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.834162 <... openat resumed>) = 3
+665   17:04:46.834238 <... openat resumed>) = 3
+664   17:04:46.834594 close(3 <unfinished ...>
+665   17:04:46.834752 close(3 <unfinished ...>
+664   17:04:46.834821 <... close resumed>) = 0
+665   17:04:46.835063 <... close resumed>) = 0
+664   17:04:46.835163 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.835251 close(3 <unfinished ...>
+665   17:04:46.835338 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.835425 <... openat resumed>) = 3
+665   17:04:46.835501 <... openat resumed>) = 3
+663   17:04:46.835580 <... close resumed>) = 0
+663   17:04:46.835808 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.836117 close(3)          = 0
+665   17:04:46.836378 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.836457 close(3 <unfinished ...>
+663   17:04:46.836522 close(3 <unfinished ...>
+665   17:04:46.836591 <... openat resumed>) = 3
+664   17:04:46.836656 <... close resumed>) = 0
+663   17:04:46.836764 <... close resumed>) = 0
+664   17:04:46.836872 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.836948 close(3 <unfinished ...>
+663   17:04:46.837013 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.837089 <... close resumed>) = 0
+664   17:04:46.837158 <... openat resumed>) = 3
+663   17:04:46.837224 <... openat resumed>) = 3
+665   17:04:46.837292 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.837946 close(3 <unfinished ...>
+665   17:04:46.838017 close(3 <unfinished ...>
+663   17:04:46.838083 close(3 <unfinished ...>
+665   17:04:46.838151 <... close resumed>) = 0
+664   17:04:46.838216 <... close resumed>) = 0
+665   17:04:46.838285 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.838356 <... close resumed>) = 0
+665   17:04:46.838425 <... openat resumed>) = 3
+664   17:04:46.838490 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.838607 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.838720 <... openat resumed>) = 3
+663   17:04:46.838788 <... openat resumed>) = 3
+665   17:04:46.839018 close(3)          = 0
+665   17:04:46.839309 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.839552 close(3 <unfinished ...>
+664   17:04:46.839684 close(3 <unfinished ...>
+663   17:04:46.839792 <... close resumed>) = 0
+664   17:04:46.839895 <... close resumed>) = 0
+665   17:04:46.839963 close(3 <unfinished ...>
+663   17:04:46.840028 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.840102 <... close resumed>) = 0
+664   17:04:46.840167 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.840374 <... openat resumed>) = 3
+665   17:04:46.840561 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.840641 <... openat resumed>) = 3
+665   17:04:46.840710 <... openat resumed>) = 3
+664   17:04:46.841030 close(3)          = 0
+665   17:04:46.841503 close(3 <unfinished ...>
+664   17:04:46.841582 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.841667 close(3 <unfinished ...>
+665   17:04:46.841757 <... close resumed>) = 0
+664   17:04:46.841840 <... openat resumed>) = 3
+665   17:04:46.841925 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.842023 <... close resumed>) = 0
+665   17:04:46.842094 <... openat resumed>) = 3
+663   17:04:46.842245 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+665   17:04:46.842589 close(3)          = 0
+664   17:04:46.842848 close(3 <unfinished ...>
+665   17:04:46.842920 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC <unfinished ...>
+664   17:04:46.843036 <... close resumed>) = 0
+665   17:04:46.843110 <... openat resumed>) = 3
+664   17:04:46.843256 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.843375 close(3 <unfinished ...>
+664   17:04:46.843483 <... openat resumed>) = 3
+663   17:04:46.843592 <... close resumed>) = 0
+665   17:04:46.843678 close(3 <unfinished ...>
+663   17:04:46.843785 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC <unfinished ...>
+665   17:04:46.843863 <... close resumed>) = 0
+663   17:04:46.843970 <... openat resumed>) = 3
+664   17:04:46.844287 close(3)          = 0
+664   17:04:46.844646 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.844810 close(3 <unfinished ...>
+664   17:04:46.844992 <... openat resumed>) = 3
+663   17:04:46.845062 <... close resumed>) = 0
+663   17:04:46.845252 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+664   17:04:46.845670 close(3)          = 0
+664   17:04:46.846190 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.846527 close(3 <unfinished ...>
+664   17:04:46.846667 <... openat resumed>) = 3
+663   17:04:46.846778 <... close resumed>) = 0
+663   17:04:46.847224 openat(AT_FDCWD, "/etc/passwd", O_RDONLY <unfinished ...>
+664   17:04:46.847526 close(3 <unfinished ...>
+663   17:04:46.847598 <... openat resumed>) = 3
+664   17:04:46.847709 <... close resumed>) = 0
+664   17:04:46.847901 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+663   17:04:46.848727 read(3,  <unfinished ...>
+664   17:04:46.848837 close(3 <unfinished ...>
+663   17:04:46.848949 <... read resumed>"root:x:0:0:root:/root:/bin/bash\n"..., 131072) = 1975
+664   17:04:46.849064 <... close resumed>) = 0
+663   17:04:46.849247 write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1975 <unfinished ...>
+664   17:04:46.849360 openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC <unfinished ...>
+663   17:04:46.849484 <... write resumed>) = 1975
+664   17:04:46.849593 <... openat resumed>) = 3
+663   17:04:46.849700 read(3, "", 131072) = 0
+664   17:04:46.850339 close(3 <unfinished ...>
+663   17:04:46.850449 close(3 <unfinished ...>
+664   17:04:46.850519 <... close resumed>) = 0
+663   17:04:46.850629 <... close resumed>) = 0
+663   17:04:46.850762 close(1)          = 0
+663   17:04:46.851104 close(2)          = 0
+664   17:04:46.851559 read(0, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1975
+663   17:04:46.851817 +++ exited with 0 +++
+662   17:04:46.852006 <... read resumed>0x7fff6acffc00, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+662   17:04:46.852223 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=663, si_uid=1000, si_status=0, si_utime=0, si_stime=2} ---
+662   17:04:46.852504 read(7,  <unfinished ...>
+664   17:04:46.852806 read(0, "", 4096) = 0
+665   17:04:46.853108 read(0,  <unfinished ...>
+664   17:04:46.853710 close(0)          = 0
+664   17:04:46.854305 write(1, "/bin/bash\n/usr/sbin/nologin\n/usr"..., 595 <unfinished ...>
+665   17:04:46.854597 <... read resumed>"/bin/bash\n/usr/sbin/nologin\n/usr"..., 131072) = 595
+664   17:04:46.854675 <... write resumed>) = 595
+665   17:04:46.854746 read(0,  <unfinished ...>
+664   17:04:46.854815 close(1 <unfinished ...>
+665   17:04:46.854999 <... read resumed>"", 126976) = 0
+664   17:04:46.855066 <... close resumed>) = 0
+664   17:04:46.855257 close(2)          = 0
+665   17:04:46.856037 write(1, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 49 <unfinished ...>
+662   17:04:46.856382 <... read resumed>"/bin/bash\n/bin/false\n/bin/sync\n/"..., 4096) = 49
+665   17:04:46.856475 <... write resumed>) = 49
+662   17:04:46.856590 write(3, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 49) = 49
+664   17:04:46.857044 +++ exited with 0 +++
+662   17:04:46.857084 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=664, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+662   17:04:46.857211 read(7,  <unfinished ...>
+665   17:04:46.857684 close(0)          = 0
+665   17:04:46.858119 close(1 <unfinished ...>
+662   17:04:46.858354 <... read resumed>"", 4096) = 0
+665   17:04:46.858422 <... close resumed>) = 0
+662   17:04:46.858604 close(7 <unfinished ...>
+665   17:04:46.858688 close(2 <unfinished ...>
+662   17:04:46.858875 <... close resumed>) = 0
+665   17:04:46.858956 <... close resumed>) = 0
+662   17:04:46.859158 close(3)          = 0
+662   17:04:46.859799 openat(AT_FDCWD, "result.txt", O_RDONLY <unfinished ...>
+665   17:04:46.859912 +++ exited with 0 +++
+662   17:04:46.860068 <... openat resumed>) = 3
+662   17:04:46.860408 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=665, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+662   17:04:46.861904 write(1, "\n", 1) = 1
+662   17:04:46.862311 write(1, " First 5 lines of result.txt \n", 30) = 30
+662   17:04:46.862772 read(3, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 4096) = 49
+662   17:04:46.863168 write(1, "/bin/bash\n/bin/false\n/bin/sync\n/"..., 49) = 49
+662   17:04:46.863685 read(3, "", 4096) = 0
+662   17:04:46.864260 close(3)          = 0
+662   17:04:46.864706 write(1, "\n", 1) = 1
+662   17:04:46.865271 write(1, "\n", 1) = 1
+662   17:04:46.866020 write(1, "Total line count: 4\n", 20) = 20
+662   17:04:46.866539 write(1, "\n", 1) = 1
+662   17:04:46.866989 write(1, " Child process statuses \n", 25) = 25
+662   17:04:46.867434 wait4(663, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 663
+662   17:04:46.867934 write(1, "Child 1 (cat) exited with status"..., 35) = 35
+662   17:04:46.868318 wait4(664, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 664
+662   17:04:46.868737 write(1, "Child 2 (cut) exited with status"..., 35) = 35
+662   17:04:46.869136 wait4(665, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 665
+662   17:04:46.869569 write(1, "Child 3 (sort) exited with statu"..., 36) = 36
+662   17:04:46.870463 +++ exited with 0 +++
