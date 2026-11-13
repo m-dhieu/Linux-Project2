@@ -1,0 +1,2 @@
+Total matching lines across 1 files: 1358
+Elapsed time (4 threads): 0.005266 seconds

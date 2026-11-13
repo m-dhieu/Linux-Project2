@@ -1,0 +1,2 @@
+test_logs/server_1_1MB.log: 1358 matching lines out of 23087 (thread 1)
+Total matching lines across 1 files: 1358
